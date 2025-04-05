@@ -1,51 +1,67 @@
 # Beresheet_Landing_Simulation
-Overview
-This project aims to simulate the autonomous landing of the Beresheet spacecraft on the Moon. The simulation models various aspects of the spacecraft's behavior, including its vertical and horizontal velocities, angular velocity, and the influence of the Moon's gravity. The goal is to develop a PID-based control system that allows the spacecraft to land safely, minimizing its speed (both vertical and horizontal) and maximizing fuel efficiency.
 
-Objective
-The primary objective of this project is to simulate the landing of Beresheet on the Moon using a basic model, with an emphasis on safety and fuel conservation. The simulation is based on:
+## Overview
 
-Modeling the physical aspects of the spacecraft.
+This project simulates the **autonomous landing of the Beresheet spacecraft** on the Moon. The simulation models various aspects of the spacecraft's behavior, such as its **vertical and horizontal velocities**, **angular velocity**, and the influence of the **Moon's gravity**. The primary goal is to develop a **PID-based control system** that enables the spacecraft to land safely, minimizing both its vertical and horizontal velocities while maximizing fuel efficiency.
 
-Implementing a PID controller to manage the spacecraft's orientation and velocity during the descent.
+## Objective
 
-Ensuring that the final landing has a vertical and horizontal velocity below 2.5 m/s, while retaining as much fuel as possible.
+The primary objective of this project is to simulate the **safe landing of Beresheet on the Moon** using a basic model, with a strong focus on:
+- **Safety**: Ensuring the spacecraft lands with minimal speed (both vertical and horizontal) to avoid crashing.
+- **Fuel Conservation**: Retaining as much fuel as possible upon landing.
 
-Task Breakdown
-Part 1: Technical analysis of the reasons for the Beresheet crash based on available data.
+The simulation includes:
+- **Modeling the spacecraft’s physical aspects**.
+- **Implementing a PID controller** to manage the spacecraft’s orientation and velocities during descent.
+- Ensuring that the final landing has both **vertical and horizontal velocities below 2.5 m/s**, with as much fuel remaining as possible.
 
-Part 2: Development of the landing simulation.
+## Task Breakdown
 
-2.1: Model the descent from a height of approximately 30 km, with a speed of around 1700 m/s.
+### Part 1: Technical Analysis
+- Analyzing the technical reasons behind the **Beresheet crash** based on available data.
 
-2.2: Model the spacecraft's mass (changing with fuel consumption), vertical and horizontal velocities, and rotational velocity.
+### Part 2: Development of the Landing Simulation
+1. **Modeling the Descent**  
+   - Simulate the descent from a height of **30 km** above the Moon, at a speed of approximately **1700 m/s**.
+   
+2. **Spacecraft Modeling**  
+   - Model the spacecraft’s **mass** (changing with fuel consumption), **vertical and horizontal velocities**, and **rotational velocity**.
+   
+3. **PID Control Implementation**  
+   - Implement a **PID controller** to adjust the spacecraft's attitude and velocities.
+   - Simulate the landing sequence using this controller to achieve a safe landing.
 
-2.3: Implement a PID controller for attitude control and simulate the landing sequence.
+4. **Final Report**  
+   - Write a detailed **final report** including the **best results** achieved from the simulation.
 
-2.4: Write a final report, including the best results achieved from the simulation.
+## Technologies Used
 
-Technologies Used
-Java: The primary language used for the simulation.
+- **Java**: The primary language used to implement the simulation.
+- **PID Controller**: A Proportional-Integral-Derivative (PID) controller is used to adjust the spacecraft’s orientation and velocities during descent.
+- **CSV for Data**: The results of the simulation are stored in a **CSV file format**, allowing for easy evaluation of the data.
 
-PID Controller: A Proportional-Integral-Derivative (PID) controller is used to adjust the spacecraft's orientation and velocities.
+## Files Overview
 
-CSV for Data: Data used to evaluate the simulation results is stored in a CSV file format.
+- **Beresheet_103.java**: The **main simulation code** for the Beresheet spacecraft.
+- **PID.java**: The **PID control class**, which manages the spacecraft’s velocity and orientation during descent.
+- **Moon.java**: A class that contains the **physical properties of the Moon**, including gravity and equatorial speed.
+- **landing_data.csv**: A **CSV file** that contains data used for testing and evaluating the simulation results.
 
-Files Overview
-Beresheet_103.java: Main simulation code for the Beresheet spacecraft.
+## Installation and Setup
 
-PID.java: PID control class to manage spacecraft's velocity and orientation.
+Follow the steps below to set up the project on your local machine:
 
-Moon.java: Class containing the physical properties of the Moon, including gravity and equatorial speed.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/Beresheet_Landing_Simulation.git
+   ```
 
-landing_data.csv: CSV file containing data used for testing and evaluating the simulation results.
+2. Open the project in your preferred **IDE** (e.g., **IntelliJ IDEA**, **Eclipse**).
 
-Installation and Setup
-Clone this repository to your local machine:
+3. Compile and run the Java files to start the simulation.
 
-bash
-Copy
-git clone https://github.com/yourusername/Beresheet_Landing_Simulation.git
-Open the project in your preferred IDE (e.g., IntelliJ IDEA, Eclipse).
+4. Ensure that you have the necessary environment to run Java programs.
+5. 
+## Contributing
 
-Compile and run the Java files to start the simulation. Make sure you have the necessary environment to run Java programs.
+Feel free to fork this repository, make improvements, and submit **pull requests**. Contributions to optimize the PID controller or enhance the spacecraft model are welcome!
