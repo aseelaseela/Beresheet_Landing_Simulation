@@ -61,7 +61,6 @@ Follow the steps below to set up the project on your local machine:
 3. Compile and run the Java files to start the simulation.
 
 4. Ensure that you have the necessary environment to run Java programs.
-5. 
-## Contributing
-
+   
+This project was developed by Aseel Ahmad and Ben.
 Feel free to fork this repository, make improvements, and submit **pull requests**. Contributions to optimize the PID controller or enhance the spacecraft model are welcome!
