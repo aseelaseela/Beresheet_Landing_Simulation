@@ -41,7 +41,7 @@ public class Bereshit_103 {
 
     public static void main(String[] args) {
         try {
-            // ✅ Create log file
+            // Create log file
             PrintWriter log = new PrintWriter(new FileWriter("landing_data.csv"));
             log.println("Time,VS,HS,Distance,Altitude,Angle,Weight,Acceleration,Throttle,Fuel"); // CSV header
 
@@ -170,7 +170,7 @@ public class Bereshit_103 {
                 }
             }
 
-            log.close(); // ✅ Close file after writing data
+            log.close(); //  Close file after writing data
 
             // Final result
             System.out.println("Landing complete!");
