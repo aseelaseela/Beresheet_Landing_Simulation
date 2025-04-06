@@ -82,6 +82,7 @@ public class Bereshit_103 {
                     hs_target = hs * 0.7;  // Reduce by 30% each iteration
                     ang = Math.min(77, ang + 4);  // Very fast angle change for braking
                 } 
+                
                 else if (alt > 2000) {
                     vs_target = vs*0.5;
                     hs_target = hs * 0.5;  // Reduce by 50% each iteration
