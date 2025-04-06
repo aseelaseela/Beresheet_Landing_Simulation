@@ -62,5 +62,6 @@ Follow the steps below to set up the project on your local machine:
 
 4. Ensure that you have the necessary environment to run Java programs.
    
-This project was developed by **Aseel Ahmad and Ben**.
+This project was developed by
+ **Aseel Ahmad 324885417 and Ben**.
 Feel free to fork this repository, make improvements, and submit pull requests. Contributions to optimize the PID controller or enhance the spacecraft model are welcome!
