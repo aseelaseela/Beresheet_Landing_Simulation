@@ -22,11 +22,11 @@ public class Bereshit_103 {
     private static final double VS_KD = 1.0;
     private static final double VS_MAX_I = 5;
         
-    // More aggressive horizontal PID constants
-    private static final double HS_KP = 10.0;  // Increased from 8.0
-    private static final double HS_KI = 0.05;   // Increased from 0.02
-    private static final double HS_KD = 4.0;    // Increased from 3.0
-    private static final double HS_MAX_I = 15;   // Increased from 10
+    // Horizontal PID constants
+    private static final double HS_KP = 10.0;  
+    private static final double HS_KI = 0.05;  
+    private static final double HS_KD = 4.0;    
+    private static final double HS_MAX_I = 15; 
 
     public static double accMax(double weight) {
         return acc(weight, true, 8);
@@ -66,8 +66,7 @@ public class Bereshit_103 {
             System.out.println("time, vs, hs, dist, alt, ang, weight, acc, NN, fuel");
 
             while (alt > 0) {
-                if (true) { //time % 10 == 0 || alt < 100
-                    // Print values for console logging
+                if (true) {
                     System.out.printf("%.1f, %.2f, %.2f, %.1f, %.1f, %.1f, %.1f, %.2f, %.2f, %.1f%n",
                         time, vs, hs, dist, alt, ang, weight, acc, NN,fuel);
 
